@@ -33,7 +33,7 @@ module.exports = {
     with_style: {
       when: 'ismeta',
       type: 'list',
-      message: '选择安装less或者sass',
+      message: '选择安装less或者sass（构建工具不提供全局变量,请参照官方的例子进行配置）',
       choices: [
         {
           name: '不使用',
@@ -65,7 +65,7 @@ module.exports = {
     store: {
       when: 'useStore',
       type: 'list',
-      message: '选择安装redux或者mobx',
+      message: '选择安装redux或者mobx（目前仅支持redux来管理状态,mobx将在后面更新）',
       choices: [
         {
           name: '不使用',
@@ -87,12 +87,12 @@ module.exports = {
     server: {
       when: 'ismeta',
       type: 'confirm',
-      message: '是否要自定义服务端？'
+      message: '是否要自定义服务端'
     },
     autoInstall: {
       when: 'ismeta',
       type: 'confirm',
-      message: '是否自动执行npm install 安装依赖？',
+      message: '是否自动执行npm install 安装依赖',
     }
   },
   filters: {
